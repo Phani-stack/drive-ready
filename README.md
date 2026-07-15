@@ -1,3 +1,3 @@
 # Fundamentals of Python
-# DataTypes
+#### DataTypes
 ![DataTypes](./static/datatypes.png)
