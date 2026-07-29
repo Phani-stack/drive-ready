@@ -6,7 +6,7 @@
       default value when the function doesn't have any
       arguments. Default is always at the end of function
 
-    >
+    > inner function remembers outer functions variables, scope
 '''
 
 # function
@@ -142,3 +142,26 @@ def display_pep(value):
     print(value)
 
 map(display_pep, ages)
+
+print_cheyyi = print
+# print_cheyyi("Hello")
+
+l = [1, 2, 3]
+
+def add5(n):
+    return n + 5
+
+# print(list(map(add5, l)))
+
+def outer():
+    # print("Outer function")
+    def inner():
+        print("Inner function")
+        pass
+    inner()
+outer()
+
+
+print(square(3))
+
+
