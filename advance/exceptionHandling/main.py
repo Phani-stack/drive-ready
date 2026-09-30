@@ -1,0 +1,2 @@
+class BobException(Exception):
+    pass
